@@ -176,27 +176,30 @@ a.tel:before {
 .img {
     padding: 45px 0 30px;
     width: 100%;
+    color: #fff;
     background-image: url(../photo/Rectangle\ 9.png);
     text-align: center;
     background-size: cover;
 }
 
 .img p {
-    margin: 0;
+    margin: 5px 0;
 }
 
 .title {
     font-size: 30px;
     letter-spacing: 2px;
     line-height: 24px;
-    color: #fff;
-    font-weight: 700;
+    font-weight: 700px;
 }
 
 .subtitle {
     font-size: 14px;
     line-height: 24px;
-    color: #fff;
+}
+
+p.price {
+    margin: 10px 0;
 }
 
 .price strong {
@@ -221,14 +224,14 @@ a.tel:before {
 .main {
     display: flex;
     justify-content: space-between;
-
+padding: 37px 0;
 }
 
 .content {
     max-width: 670px;
     padding-bottom: 34px;
     border-radius: 0;
-    border-bottom: 1px solid #e4e4ec;
+    border-bottom: 1px solid #cdcddd;
 }
 
 .content h1 {
@@ -312,38 +315,47 @@ a.tel:before {
 }
 
 
-.aside ul {
+.menu {
     margin: 0;
     padding-left: 0;
     background-color: #e4e4ec;
-    
 }
 
-.aside li {
+.menu li {
     list-style: none;
-    border-radius: 0;
-    border-bottom: 1px solid #e4e4;
 }
 
-.aside a {
-    display: inline-block;
+
+.menu>li+li {
+    border-radius: 0;
+    border-top: 1px solid #cdcddd;
+
+}
+
+.menu>li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.menu a {
+    position: relative;
+    display: block;
     padding: 11px 15px;
+    color: #25252c;
     font-size: 14px;
     line-height: 24px;
-    color: #25252c;
     text-decoration: none;
 }
 
+
 footer {
     width: 100%;
-    height: 205px;
     background-color: #ededf5;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-
 }
 
 .footer nav {
@@ -351,8 +363,8 @@ footer {
     justify-content: space-between;
 }
 
-.footer ul {
-
+.footer-ul {
+    padding-left: 0;
     list-style: none;
 }
 
@@ -367,6 +379,7 @@ footer {
     text-decoration: underline;
     color: #fd8300;
 }
+
 
 .footer-copy {
     background-color: #dcdce6;

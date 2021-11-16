@@ -57,10 +57,11 @@
             </div>
         </div>
         <div class="img">
-            <p class="title">Пропозиція місяця</p>
-            <p class="subtitle">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p class="price"><strong>5999</strong> грн / м<sup>2</sup></p>
-        </div>
+            <div class="wrapper">
+                <p class="title">Пропозиція місяця</p>
+                <p class="subtitle">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+                <p class="price"><strong>5999</strong> грн / м<sup>2</sup></p>
+            </div>
         </div>
     </header>
     <div class="wrapper">
@@ -105,7 +106,7 @@
                                 <p>Загальна площа будови: 290 м<sup>2</sup></p>
                                 <p>Кількість спалень: 3</p>
                                 <p>Гараж: 2 авто</p>
-                            </figcation>
+                                </figcation>
                         </figure>
                         <figure class="column">
                             <figcaption>
@@ -123,24 +124,24 @@
             <aside class="aside">
                 <p>Категорії проектів</p>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li>
                             <a href="#">Генеральний план</a>
                         </li>
                         <li>
                             <a href="#">Навколишнє середовище</a>
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="#">Продані</a>
+                                </li>
+                                <li>
+                                    <a href="#">Заброньованні</a>
+                                </li>
+                                <li>
+                                    <a href="#">В процесі будівництва</a>
+                                </li>
+                            </ul>
                         </li>
-                        <ul>
-                            <li>
-                                <a href="#">Продані</a>
-                            </li>
-                            <li>
-                                <a href="#">Заброньованні</a>
-                            </li>
-                            <li>
-                                <a href="#">В процесі будівництва</a>
-                            </li>
-                        </ul>
                         <li>
                             <a href="#">Умови придбання</a>
                         </li>
@@ -170,13 +171,16 @@
                         <li><a href="#">Сервіс</a></li>
                         <li><a href="#">Новини</a></li>
                     </ul>
+                </nav>
+                <nav class="column">
                     <ul class="footer-ul">
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="#">Страхування</a></li>
                         <li><a href="#">Контакти</a></li>
                     </ul>
-
                 </nav>
+
+
                 <div class="column telephone">
                     <p><a class="tel" href="tel:+380971002525">+38(097) 100-25-25</a></p>
                     <p><a href="tel:+380671002525">+38(067) 100-25-25</a></p>
