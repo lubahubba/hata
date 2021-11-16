@@ -100,6 +100,20 @@ a.in:hover {
     text-decoration: none;
 }
 
+.stick {
+    position: relative;
+}
+
+.stick:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    right: -18px;
+    top: 20px;
+}
+
 .mail a {
     font-size: 16px;
     line-height: 24px;
@@ -126,7 +140,7 @@ a.in:hover {
 
 .telephone a:before,
 .emails a:before {
-    content: '';
+    content: "";
     position: absolute;
     left: -30px;
     top: 2px;
@@ -224,7 +238,7 @@ p.price {
 .main {
     display: flex;
     justify-content: space-between;
-padding: 37px 0;
+    padding: 37px 0;
 }
 
 .content {
@@ -338,7 +352,6 @@ padding: 37px 0;
 }
 
 .menu a {
-    position: relative;
     display: block;
     padding: 11px 15px;
     color: #25252c;
@@ -347,6 +360,49 @@ padding: 37px 0;
     text-decoration: none;
 }
 
+.menu>li>a {
+    position: relative;
+}
+
+.menu>li>a::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+    right: 15px;
+    top: 17px;
+    transform: rotate(-45deg);
+}
+
+.menu>li>a:hover:before {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: all 1s eases;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+.menu-list a {
+    padding-left: 30px;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu>li:hover>.menu-list {
+    display: block;
+}
+
+.menu-list a:hover {
+    background-color: #cecedd;
+
+}
 
 footer {
     width: 100%;
@@ -356,6 +412,10 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+}
+
+.footer>.telephone {
+    padding: 0;
 }
 
 .footer nav {
