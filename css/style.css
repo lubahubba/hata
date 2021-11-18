@@ -248,6 +248,11 @@ p.price {
     border-bottom: 1px solid #cdcddd;
 }
 
+.discription {
+    max-width: 940px;
+
+}
+
 .content h1 {
     font-size: 30px;
     line-height: 24px;
@@ -255,10 +260,74 @@ p.price {
     font-weight: 700;
 }
 
+.discription h1 {
+    padding-bottom: 15px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.discription p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
 .content p {
     font-size: 14px;
     line-height: 24px;
-    color: #666666;
+    color: #666;
+}
+
+table {
+    margin: 20px o;
+    width: 960px;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+
+thead th {
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+    font-family: "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+tbody {
+    border-radius: 3px;
+    background-color: #e4e4ec;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #cdcddd;
+}
+
+td {
+    padding: 9px 20px;
+    color: #666;
+}
+
+.discription a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .content a {
@@ -268,6 +337,10 @@ p.price {
     font-weight: bold;
     text-decoration: none;
 
+}
+
+.discription a:hover {
+    text-decoration: underline;
 }
 
 .content a:hover {
@@ -343,7 +416,6 @@ p.price {
 .menu>li+li {
     border-radius: 0;
     border-top: 1px solid #cdcddd;
-
 }
 
 .menu>li:hover>a {
@@ -383,16 +455,15 @@ p.price {
     transition: all 1s eases;
 }
 
-.menu-list {
-    padding: 0;
-}
 
 .menu-list a {
+    color: #666;
     padding-left: 30px;
 }
 
 .menu-list {
     display: none;
+    padding: 0;
 }
 
 .menu>li:hover>.menu-list {
