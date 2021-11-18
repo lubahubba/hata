@@ -10,6 +10,7 @@ body {
 
 .row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 -14px;
 }
@@ -205,6 +206,7 @@ a.tel:before {
     letter-spacing: 2px;
     line-height: 24px;
     font-weight: 700px;
+    font-family: "Roboto Slab";
 }
 
 .subtitle {
@@ -238,6 +240,9 @@ p.price {
 .main {
     display: flex;
     justify-content: space-between;
+    padding: 37px 0;
+}
+.main-pace {
     padding: 37px 0;
 }
 
@@ -283,7 +288,7 @@ p.price {
 }
 
 table {
-    margin: 20px o;
+    margin: 20px 0;
     width: 960px;
     border-collapse: collapse;
     font-size: 14px;
@@ -347,7 +352,12 @@ td {
     text-decoration: underline;
 }
 
-
+tr:last-child>td:first-child {
+    border-radius: 0 0 0 3px;
+}
+tr:last-child>td:last-child {
+    border-radius: 0 0 3px 0;
+}
 
 .figure h3 {
     margin: 0;
@@ -483,6 +493,8 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start ;
+
 }
 
 .footer>.telephone {
@@ -491,7 +503,8 @@ footer {
 
 .footer nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start ;
 }
 
 .footer-ul {
