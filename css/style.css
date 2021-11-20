@@ -41,8 +41,7 @@ body {
 }
 
 header {
-    border-radius: 0;
-    border-bottom: 1px solid #cdcddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .header {
