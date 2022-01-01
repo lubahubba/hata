@@ -311,10 +311,11 @@ p.price {
     color: #666666;
 }
 
-.details p{
+.pay p {
     margin: 0;
 }
-.details .contacts-column-p{
+
+.pay .contacts-column-p {
     margin-bottom: 15px;
 }
 
@@ -406,6 +407,52 @@ textarea {
     border-radius: 21px;
     background-color: #fd8300;
     border: none;
+}
+
+.my-check {
+    display: none;
+}
+
+.my-check+label {
+    position: relative;
+    padding: 20px 30px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666;
+}
+
+.my-check:checked+label {
+    color: #25252c;
+}
+
+.my-check+label::before,
+.my-check+label::after {
+    content: "";
+    position: absolute;
+}
+
+.my-check+label::before {
+    left: 0;
+    top: 18px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #c5c5d4;
+}
+
+.my-check:checked+label::before {
+    border-color: #25252c;
+}
+
+.my-check:checked+label::after {
+    width: 9px;
+    height: 4px;
+    left: 3px;
+    top: 22px;
+    border-left: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
+    transform: rotate(-45deg);
 }
 
 .content {
