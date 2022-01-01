@@ -400,6 +400,7 @@ textarea {
 [type="submit"] {
     padding: 9px 30px;
     font-size: 14px;
+    margin-right: 25px;
     line-height: 24px;
     color: #fff;
     font-weight: bold;
@@ -410,7 +411,8 @@ textarea {
 }
 
 .my-check {
-    display: none;
+    visibility: hidden;
+    position: absolute;
 }
 
 .my-check+label {
@@ -422,7 +424,7 @@ textarea {
 }
 
 .my-check:checked+label {
-    color: #25252c;
+    color: #1f1f56;
 }
 
 .my-check+label::before,
@@ -442,7 +444,7 @@ textarea {
 }
 
 .my-check:checked+label::before {
-    border-color: #25252c;
+    border-color: #1f1f56;
 }
 
 .my-check:checked+label::after {
