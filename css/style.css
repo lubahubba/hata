@@ -366,8 +366,7 @@ form h2 {
 
 .form-client,
 .client {
-    margin: 10px 0;
-    min-width: 228px;
+     min-width: 228px;
 }
 
 .input-client {
